@@ -40,3 +40,9 @@ $(document).ready(function(){
     event.preventDefault();
   });
 });
+
+//////////IRRELEVANT BELOW!!////////
+// var friends = ['jim', 'joe', 'bob', 'bill', 'steve'];
+// for (var index = 0; index < friends.length; index ++) {
+//   alert("hello " + friends[index] + "!");
+// };
