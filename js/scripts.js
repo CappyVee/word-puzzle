@@ -29,7 +29,8 @@
 $(document).ready(function(){
   $("#formPhrase").submit(function(event){
     var words = $("input#phrase").val();
-    var vowels = ["a", "e", "i", "o", "u"];
+    var cloneWords = words.slice();
+    var vowels = ["a", "A", "e", "E", "i", "I", "o", "O", "u", "U"];
     for (var i = 0; i < vowels.length; i++){
       var words = words.split(vowels[i]).join("-");
 
@@ -37,7 +38,19 @@ $(document).ready(function(){
 
     };//end for loop
     $(".formPhrase").text(words);
+    $(".show").hide();
+    $(".hide").show();
     event.preventDefault();
+
+    $("#formPhrase2").submit(function(event){
+      var compareStr = $("input#phrase2").val();
+      if (cloneWords === compareStr) {
+        $(".victory").show();
+      } else {
+        $(".failure").show();
+      }
+      event.preventDefault();
+    });
   });
 });
 

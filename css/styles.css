@@ -1,3 +1,12 @@
 body {
   width: 65%;
 }
+.hide {
+  display: none;
+}
+.victory {
+  display: none;
+}
+.failure {
+  display: none;
+}

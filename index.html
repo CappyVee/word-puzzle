@@ -11,17 +11,36 @@
   <body>
     <div class="container">
       <div class="show">
-        <h1>Guess the Phrase</h1>
-
+        <h1>Word Puzzle!</h1>
+        <p>Enter a phrase below to turn into a puzzle</p>
         <form id="formPhrase">
           <div class="form-group">
             <label for="phrase"></label>
             <input type="text" id="phrase" class="form-control">
+            <br>
             <button type="submit" class="btn btn-danger">CLICK ME</button>
           </div>
-
+        </form>
       </div>
-      <p><span class="formPhrase"></span></p>
+      <div class="hide">
+        <h1>Word Puzzle!</h1>
+        <p><strong>"<span class="formPhrase"></span>"</strong></p>
+        <p>Try and enter the above phrase below with the missing vowels!</p>
+        <form id="formPhrase2">
+          <div class="form-group">
+            <label for="phrase2"></label>
+            <input type="text" id="phrase2" class="form-control">
+            <br>
+            <button type="submit" class="btn btn-danger">Solve</button>
+          </div>
+        </form>
+      </div>
+      <div class="victory">
+        <p>CONGRATULATIONS</p>
+      </div>
+      <div class="failure">
+        <p>NOPE</p>
+      </div>
     </div>
     <br>
     <br>
